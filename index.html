@@ -17,13 +17,11 @@ body{font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'
 .section-ribbon:before{top:-60px;left:-10vw;transform:skewY(-6deg)}
 .section-ribbon:after{bottom:-60px;right:-10vw;transform:skewY(6deg)}
 .sep{height:1px;background:linear-gradient(90deg,transparent,rgba(239,68,68,.5),transparent)}
-/* reveal */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
 .reveal.reveal-show{opacity:1;transform:none}
 .reveal-del-1{transition-delay:.07s}.reveal-del-2{transition-delay:.14s}.reveal-del-3{transition-delay:.21s}
-/* hovers */
-.hvr-card{transition:transform .25s} .hvr-card:hover{transform:translateY(-4px)}
-.hvr-btn{transition:transform .2s} .hvr-btn:hover{transform:translateY(-1px)}
+.hvr-card{transition:transform .25s}.hvr-card:hover{transform:translateY(-4px)}
+.hvr-btn{transition:transform .2s}.hvr-btn:hover{transform:translateY(-1px)}
 .hvr-link{position:relative}
 .hvr-link:after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:1.5px;background:#ef4444;transition:right .25s}
 .hvr-link:hover:after{right:0}
@@ -63,11 +61,18 @@ body{font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'
   <div class="container mx-auto px-4 py-12 md:py-20 grid md:grid-cols-2 gap-10 items-center">
     <div class="reveal">
       <h1 class="text-3xl md:text-5xl font-extrabold leading-tight title-glow">Ваш личный юрист в Иваново<br><span class="text-red-500">Спокойно решу то, что кажется запутанным</span></h1>
-      <p class="mt-4 text-neutral-300 max-w-xl">Здравствуйте! Я, Желаева Мария Сергеевна — частный юрист с опытом 20+ лет. Банкротство физлиц, семейные, жилищные и имущественные споры, защита в суде, исполнительное производство, сопровождение сделок.</p>
+      <p class="mt-4 text-neutral-300 max-w-xl">Здравствуйте! Я Желаева Мария Сергеевна — частный юрист с опытом 20+ лет. Банкротство физлиц, семейные, жилищные и имущественные споры, защита в суде, исполнительное производство, сопровождение сделок.</p>
       <div class="mt-6 flex flex-wrap gap-3 reveal reveal-del-1">
         <a href="#lead" class="px-5 py-3 rounded-xl bg-red-600 text-white font-medium hvr-btn">Бесплатная оценка дела</a>
         <a href="https://wa.me/79016806250?text=Здравствуйте%2C%20нужна%20консультация" class="px-5 py-3 rounded-xl border border-neutral-700 hover:border-neutral-500 hvr-btn">WhatsApp</a>
         <a href="tg://resolve?phone=79016806250" class="px-5 py-3 rounded-xl border border-neutral-700 hover:border-neutral-500 hvr-btn">Telegram</a>
+      </div>
+      <!-- Бейдж членства АЮР -->
+      <div class="mt-4 flex items-center gap-3 text-sm text-neutral-300 reveal reveal-del-2">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-lg ring-grad">
+          <svg width="16" height="16" viewBox="0 0 24 24" class="opacity-80" aria-hidden="true"><path fill="currentColor" d="M12 2l3 6l6 .9l-4.5 4.3L17 20l-5-2.7L7 20l1.5-6.8L4 8.9L10 8z"/></svg>
+          Член Ассоциации юристов России
+        </span>
       </div>
       <div class="mt-6 grid grid-cols-3 gap-4 text-sm">
         <div class="p-4 rounded-xl ring-grad card-grad hvr-card reveal reveal-del-1"><div class="text-3xl font-extrabold text-red-500">20+</div><div class="mt-1 text-neutral-300">лет практики</div></div>
@@ -93,6 +98,8 @@ body{font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'
         <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-red-600"></span> Лично веду дело и на связи в мессенджерах</li>
         <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-red-600"></span> Чёткая смета и этапы работ в договоре</li>
         <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-red-600"></span> Первая оценка 30 минут — бесплатно</li>
+        <!-- Пункт про членство -->
+        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-red-600"></span> Член Ассоциации юристов России</li>
       </ul>
       <div class="mt-6 flex gap-3">
         <a href="#lead" class="px-5 py-3 rounded-xl bg-red-600 text-white font-medium hvr-btn">Записаться</a>
@@ -111,7 +118,7 @@ body{font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'
     <p class="mt-2 text-neutral-300 max-w-2xl reveal reveal-del-1">Быстро разбираю ситуацию на консультации. После фиксирую смету и сроки. Работаю по договору.</p>
     <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal"><h3 class="font-semibold">Банкротство физических лиц</h3>
-        <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1"><li>Списала долгов более 300 000 ₽</li><li>Сопровождение от анализа до завершения</li><li>Законно, без посредников и без стресса</li></ul>
+        <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1"><li>Списание долгов от 300 000 ₽</li><li>Сопровождение от анализа до завершения</li><li>Законно, без посредников и без стресса</li></ul>
       </article>
       <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1"><h3 class="font-semibold">Семейные дела</h3>
         <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1"><li>Развод, алименты, раздел имущества</li><li>Порядок общения с детьми</li><li>Защита интересов родителей и детей</li></ul>
