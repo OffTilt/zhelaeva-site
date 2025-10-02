@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://offtilt.github.io/zhelaeva-site/sitemap.xml
