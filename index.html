@@ -7,6 +7,7 @@
   <title>Ваш личный юрист в Иваново — Желаева Мария Сергеевна</title>
   <meta name="description" content="Юрист в Иваново. Банкротство физических лиц, семейные и жилищные споры. 20+ лет практики. Бесплатная оценка дела за 30 минут.">
 
+  <!-- базовое -->
   <link rel="icon" href="/favicon.ico">
   <link rel="canonical" href="https://zhelaeva.ru">
   <meta name="theme-color" content="#111111">
@@ -21,10 +22,14 @@
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Интер -->
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- Стили -->
   <style>
+    html{scroll-behavior:smooth;scroll-padding-top:84px}
     body{font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,'Noto Sans'}
     .container{max-width:1120px}
     .top-accent{background:linear-gradient(90deg,#ef4444,transparent)}
@@ -36,12 +41,16 @@
     .section-ribbon:before,.section-ribbon:after{content:"";position:absolute;width:38vw;height:200px;background:linear-gradient(90deg,rgba(239,68,68,.10),transparent);filter:blur(20px);pointer-events:none}
     .section-ribbon:before{top:-60px;left:-10vw;transform:skewY(-6deg)}
     .section-ribbon:after{bottom:-60px;right:-10vw;transform:skewY(6deg)}
-    .sep{height:1px;background:linear-gradient(90deg,transparent,rgba(239,68,68,.5),transparent)}
+    .sep-dots{height:1px;position:relative;background:linear-gradient(90deg,transparent,rgba(239,68,68,.5),transparent)}
+    .sep-dots:after{content:"";position:absolute;inset:auto 10% -3px auto;width:6px;height:6px;border-radius:50%;background:#ef4444;filter:blur(1px)}
     .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
     .reveal.reveal-show{opacity:1;transform:none}
     .reveal-del-1{transition-delay:.07s}.reveal-del-2{transition-delay:.14s}.reveal-del-3{transition-delay:.21s}
-    .hvr-card{transition:transform .25s}.hvr-card:hover{transform:translateY(-4px)}
-    .hvr-btn{transition:transform .2s}.hvr-btn:hover{transform:translateY(-1px)}
+    .hvr-card{transition:transform .25s, box-shadow .25s}
+    .hvr-card:hover{transform:translateY(-4px)}
+    .hvr-btn{transition:transform .15s,box-shadow .15s}
+    .hvr-btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px -8px rgba(239,68,68,.35)}
+    .hvr-btn:active{transform:translateY(0)}
     .hvr-link{position:relative}
     .hvr-link:after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:1.5px;background:#ef4444;transition:right .25s}
     .hvr-link:hover:after{right:0}
@@ -69,6 +78,7 @@
   <div class="absolute inset-0 -z-20 grid-bg opacity-40"></div>
   <div class="top-accent h-0.5 w-full"></div>
 
+  <!-- Header -->
   <header class="sticky top-0 z-50 border-b border-neutral-800/80 backdrop-blur bg-neutral-900/85">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
       <a href="#top" class="font-semibold">Желаева Мария • Юрист</a>
@@ -127,7 +137,7 @@
     </div>
   </section>
 
-  <div class="sep"></div>
+  <div class="sep-dots"></div>
 
   <!-- About -->
   <section id="about" class="py-14 border-y border-neutral-800/80 bg-neutral-900 section-ribbon">
@@ -164,48 +174,71 @@
         Быстро разбираю ситуацию на консультации. После фиксирую смету и сроки. Работаю по договору.
       </p>
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal">
-          <h3 class="font-semibold">Банкротство <span class="whitespace-nowrap">физических лиц</span></h3>
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal">
+          <h3 class="font-semibold flex items-center gap-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" class="opacity-80"><path fill="currentColor" d="M7 11h10v2H7zM5 7h14v2H5zM9 15h6v2H9z"/></svg>
+            Банкротство <span class="whitespace-nowrap">физических лиц</span>
+          </h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
-            <li>Списание долгов от 300 000 ₽</li>
+            <li>Списала долгов от 500 000 000 ₽</li>
             <li>Сопровождение от анализа до завершения</li>
             <li>Законно, без посредников и без стресса</li>
           </ul>
         </article>
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
-          <h3 class="font-semibold">Семейные дела</h3>
+
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-1">
+          <h3 class="font-semibold flex items-center gap-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" class="opacity-80"><path fill="currentColor" d="M12 3l7 4v6c0 5-7 8-7 8s-7-3-7-8V7l7-4z"/></svg>
+            Семейные дела
+          </h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
             <li>Развод, алименты, раздел имущества</li>
             <li>Порядок общения с детьми</li>
             <li>Защита интересов родителей и детей</li>
           </ul>
         </article>
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2">
-          <h3 class="font-semibold">Жилищные/имущественные споры</h3>
+
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-2">
+          <h3 class="font-semibold flex items-center gap-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" class="opacity-80"><path fill="currentColor" d="M4 6h16v2H4zm2 5h12v2H6zm-2 5h16v2H4z"/></svg>
+            Жилищные/имущественные споры
+          </h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
             <li>Признание права собственности</li>
             <li>Наследство, доли, участки</li>
             <li>Устранение препятствий в пользовании</li>
           </ul>
         </article>
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal">
-          <h3 class="font-semibold">Защита в суде</h3>
+
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal">
+          <h3 class="font-semibold flex items-center gap-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" class="opacity-80"><path fill="currentColor" d="M3 5h18v2H3zm2 4h14v2H5zm-2 4h18v2H3zm2 4h14v2H5z"/></svg>
+            Защита в суде
+          </h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
             <li>Иски, заявления, претензии</li>
             <li>Представительство на всех этапах</li>
             <li>Досудебное урегулирование</li>
           </ul>
         </article>
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
-          <h3 class="font-semibold">Исполнительное производство</h3>
+
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-1">
+          <h3 class="font-semibold flex items-center gap-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" class="opacity-80"><path fill="currentColor" d="M12 2a7 7 0 0 1 7 7v2h1a2 2 0 0 1 2 2v7H2v-7a2 2 0 0 1 2-2h1V9a7 7 0 0 1 7-7z"/></svg>
+            Исполнительное производство
+          </h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
             <li>Работа с приставами</li>
             <li>Снятие арестов, защита имущества</li>
             <li>Обжалование действий ФССП</li>
           </ul>
         </article>
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2">
-          <h3 class="font-semibold">Сделки и консультации</h3>
+
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-2">
+          <h3 class="font-semibold flex items-center gap-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" class="opacity-80"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h10v2H4z"/></svg>
+            Сделки и консультации
+          </h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
             <li>Проверка документов</li>
             <li>Юридические заключения</li>
@@ -221,10 +254,10 @@
     <div class="container mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold title-glow">Как работаю</h2>
       <div class="mt-8 grid md:grid-cols-4 gap-6">
-        <div class="p-6 rounded-2xl ring-grad card-grad reveal"><div class="text-red-500 font-bold">01</div><h3 class="mt-1 font-semibold">Оценка 30 минут</h3><p class="mt-2 text-sm text-neutral-300">Краткий разбор, прогноз, первичный план действий.</p></div>
-        <div class="p-6 rounded-2xl ring-grad card-grad reveal reveal-del-1"><div class="text-red-500 font-bold">02</div><h3 class="mt-1 font-semibold">Договор и стратегия</h3><p class="mt-2 text-sm text-neutral-300">Фиксирую задачи, смету и сроки по этапам.</p></div>
-        <div class="p-6 rounded-2xl ring-grad card-grad reveal reveal-del-2"><div class="text-red-500 font-bold">03</div><h3 class="mt-1 font-semibold">Ведение дела</h3><p class="mt-2 text-sm text-neutral-300">Документы, суд, переговоры. На связи в мессенджерах.</p></div>
-        <div class="p-6 rounded-2xl ring-grad card-grad reveal reveal-del-3"><div class="text-red-500 font-bold">04</div><h3 class="mt-1 font-semibold">Результат и отчёт</h3><p class="mt-2 text-sm text-neutral-300">Закрывающие документы и рекомендации.</p></div>
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal"><div class="text-red-500 font-bold">01</div><h3 class="mt-1 font-semibold">Оценка 30 минут</h3><p class="mt-2 text-sm text-neutral-300">Краткий разбор, прогноз, первичный план действий.</p></div>
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-1"><div class="text-red-500 font-bold">02</div><h3 class="mt-1 font-semibold">Договор и стратегия</h3><p class="mt-2 text-sm text-neutral-300">Фиксирую задачи, смету и сроки по этапам.</p></div>
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-2"><div class="text-red-500 font-bold">03</div><h3 class="mt-1 font-semibold">Ведение дела</h3><p class="mt-2 text-sm text-neutral-300">Документы, суд, переговоры. На связи в мессенджерах.</p></div>
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-3"><div class="text-red-500 font-bold">04</div><h3 class="mt-1 font-semibold">Результат и отчёт</h3><p class="mt-2 text-sm text-neutral-300">Закрывающие документы и рекомендации.</p></div>
       </div>
     </div>
   </section>
@@ -234,15 +267,15 @@
     <div class="container mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold reveal title-glow">Кейсы</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal">
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal">
           <h3 class="font-semibold">Списала более 500 млн ₽ долгов</h3>
-          <p class="mt-2 text-sm text-neutral-300">Анализ ситуации, подготовка, полное сопровождение в суде.</p>
+          <p class="mt-2 text-sm text-neutral-300">Анализ ситуации, подготовка, полное сопровождение в суде, помощь в выборе финансового управляющего и взаимодействие с ним.</p>
         </article>
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-1">
           <h3 class="font-semibold">Раздел имущества</h3>
-          <p class="mt-2 text-sm text-neutral-300">Движимое и недвижимое имущество, кредитные обязательства, счета.</p>
+          <p class="mt-2 text-sm text-neutral-300">Движимое и недвижимое имущество (в том числе ипотечное), кредитные обязательства, денежные средства на счетах.</p>
         </article>
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2">
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-2">
           <h3 class="font-semibold">Неосновательное обогащение</h3>
           <p class="mt-2 text-sm text-neutral-300">Анализ ситуации, полное представительство в суде.</p>
         </article>
@@ -255,19 +288,19 @@
     <div class="container mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold reveal title-glow">Цены и форматы</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal">
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal">
           <h3 class="font-semibold">Консультация</h3>
           <p class="text-3xl font-extrabold mt-2 text-white">0 ₽ / 30 мин</p>
           <p class="mt-2 text-sm text-neutral-300">Первичный разбор и план действий.</p>
           <a href="#lead" class="mt-4 inline-block px-4 py-2 rounded-xl bg-red-600 text-white hvr-btn">Записаться</a>
         </div>
-        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-1">
           <h3 class="font-semibold">Фиксированная смета</h3>
           <p class="text-3xl font-extrabold mt-2 text-white">от 10 000 ₽</p>
           <p class="mt-2 text-sm text-neutral-300">Документы, отдельные этапы, досудебное урегулирование.</p>
           <a href="#lead" class="mt-4 inline-block px-4 py-2 rounded-xl border border-neutral-700 hvr-btn">Обсудить</a>
         </div>
-        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2">
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-2">
           <h3 class="font-semibold">Ведение дела</h3>
           <p class="text-3xl font-extrabold mt-2 text-white">от 20 000 ₽</p>
           <p class="mt-2 text-sm text-neutral-300">Представительство в суде. Оплата по этапам. Возможна рассрочка.</p>
@@ -315,17 +348,15 @@
           </ul>
         </div>
 
-        <!-- ФОРМА: FormSubmit → на почту zhelaevamaria@yandex.ru -->
+        <!-- ФОРМА: FormSubmit → на почту -->
         <form action="https://formsubmit.co/zhelaevamaria@yandex.ru"
               method="POST" accept-charset="UTF-8"
               class="p-6 rounded-2xl ring-grad card-grad shadow space-y-4 reveal reveal-del-1"
               onsubmit="handleSend(this)">
-          <!-- служебные -->
           <input type="hidden" name="_subject" value="Заявка с zhelaeva.ru">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://zhelaeva.ru/thanks.html">
-          <!-- honeypot -->
           <input type="text" name="_honey" class="hidden" style="display:none">
 
           <div>
@@ -374,11 +405,14 @@
             <a href="https://wa.me/79016806250" class="text-red-500 hvr-link" target="_blank" rel="noopener">WhatsApp</a>,
             <a href="tg://resolve?phone=79016806250" class="text-red-500 hvr-link">Telegram</a>
           </p>
-          <p><b>Адрес:</b> Иваново, ул. Ермака, 43</p>
+          <p><b>Адрес:</b> Иваново, ул. Ермака, 43
+            • <a class="text-sm text-neutral-400 hvr-link" target="_blank" rel="noopener"
+                 href="https://yandex.ru/maps/?text=%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%2C%20%D0%95%D1%80%D0%BC%D0%B0%D0%BA%D0%B0%2043">Открыть на карте</a>
+          </p>
           <p><b>Время работы:</b> пн–пт 10:00–19:00</p>
         </div>
       </div>
-      <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
+      <div class="p-6 rounded-2xl ring-grad card-grad hvr-card hover:ring-red-600/30 reveal reveal-del-1">
         <h3 class="font-semibold">Записаться в офис</h3>
         <p class="mt-2 text-neutral-400">Иваново, ул. Ермака, 43</p>
         <a href="#lead" class="mt-4 inline-block px-4 py-2 rounded-xl bg-red-600 text-white hvr-btn">Записаться</a>
@@ -386,6 +420,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="py-10 text-sm text-neutral-400">
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
       <p>© <span id="year"></span> Желаева Мария Сергеевна. Все права защищены.</p>
@@ -394,12 +429,15 @@
         <a href="#agreement" class="underline hvr-link">Согласие на обработку ПДн</a>
       </div>
     </div>
+    <div class="container mx-auto px-4 mt-6 text-xs text-neutral-500">
+      ИНН / ОГРНИП (при наличии) • Член Ассоциации юристов России
+    </div>
   </footer>
 
   <section id="privacy" class="py-14 border-t border-neutral-800/80">
     <div class="container mx-auto px-4 prose prose-invert max-w-none reveal">
       <h2>Политика конфиденциальности</h2>
-      <p>Обрабатываю персональные данные только для связи по вашей заявке. Правовое основание — ваше согласие. Срок хранения — 12 месяцев. Отозвать согласие можно письмом на <a href="mailto:zhelaevamaria@yandex.ru">zhelaevamaria@yandex.ru</a>.</p>
+      <p>Обрабатываю персональные данные только для связи по вашей заявке. Правовое основание — ваше согласие. Срок хранения — 12 месяцев. Отозвать согласие можно письмом на <a href="mailto:zhelaevamaria@yandex.ru">zhelaevамaria@yandex.ru</a>.</p>
     </div>
   </section>
   <section id="agreement" class="pb-16">
@@ -417,34 +455,36 @@
     </div>
   </div>
 
+  <!-- Скрипты -->
   <script>
-    // год в футере
+    // год
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // анимация появления
     const io = new IntersectionObserver((e)=>{
-      e.forEach(x=>{
-        if(x.isIntersecting){x.target.classList.add('reveal-show');io.unobserve(x.target);}
-      })
+      e.forEach(x=>{ if(x.isIntersecting){ x.target.classList.add('reveal-show'); io.unobserve(x.target);} });
     },{threshold:.08});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-    // фолбэк для Telegram
+    // активный пункт меню при скролле
+    const sections=[...document.querySelectorAll('section[id]')];
+    const links=[...document.querySelectorAll('header nav a')];
+    addEventListener('scroll',()=>{const y=scrollY+120;
+      let id=sections.findLast(s=>s.offsetTop<=y)?.id;
+      links.forEach(a=>a.classList.toggle('text-red-500',a.getAttribute('href')==='#'+id));
+    },{passive:true});
+
+    // фолбэк Telegram
     document.querySelectorAll('a[href^="tg://resolve"]').forEach(a=>{
-      a.addEventListener('click',()=>{
-        setTimeout(()=>{ if(document.visibilityState==='visible'){ window.open('https://t.me/','_blank','noopener'); } },800);
-      });
+      a.addEventListener('click',()=>{setTimeout(()=>{if(document.visibilityState==='visible'){window.open('https://t.me/','_blank','noopener');}},800);});
     });
 
-    // UX у формы
+    // UX формы
     function handleSend(form){
-      const btn = document.getElementById('sendBtn');
-      const hint = document.getElementById('sendHint');
-      btn.disabled = true;
-      btn.textContent = 'Отправляется…';
-      // Если пользователь останется на странице (редирект заблокирован),
-      // покажем сообщение через 2.5 сек
-      setTimeout(()=>{ hint.classList.remove('hidden'); btn.textContent='Готово'; }, 2500);
+      const btn=document.getElementById('sendBtn');
+      const hint=document.getElementById('sendHint');
+      if(btn){btn.disabled=true;btn.textContent='Отправляется…';}
+      setTimeout(()=>{ if(hint){hint.classList.remove('hidden'); if(btn) btn.textContent='Готово';}},2500);
     }
   </script>
 </body>
