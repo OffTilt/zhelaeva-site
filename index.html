@@ -3,35 +3,16 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-
   <title>Ваш личный юрист в Иваново — Желаева Мария Сергеевна</title>
-  <meta name="description" content="Юрист в Иваново. Банкротство физических лиц, семейные и жилищные споры. 20+ лет практики. Бесплатная оценка дела за 30 минут."/>
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://zhelaeva.ru/"/>
-
-  <!-- Theme color (для мессенджеров/мобильных) -->
-  <meta name="theme-color" content="#111113"/>
-
-  <!-- Open Graph -->
+  <meta name="description" content="Юрист в Иваново. Банкротство физических лиц, семейные, жилищные споры. 20+ лет практики. Бесплатная оценка дела за 30 минут."/>
+  <link rel="icon" href="./favicon.ico"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <meta property="og:title" content="Юрист в Иваново — Желаева Мария Сергеевна">
-  <meta property="og:description" content="Банкротство, семейные и жилищные споры. 20+ лет практики. Первая консультация 0 ₽.">
+  <meta property="og:description" content="Банкротство, семейные, жилищные споры. 20+ лет практики. Первая консультация 0 ₽.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zhelaeva.ru/">
-  <meta property="og:image" content="https://zhelaeva.ru/og-image.jpg">
-  <meta property="og:site_name" content="Желаева Мария — юрист в Иваново">
-
-  <!-- Иконка -->
-  <link rel="icon" href="./favicon.ico"/>
-
-  <!-- Шрифты и Tailwind -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Прелоад главного изображения -->
-  <link rel="preload" as="image" href="./hero-lawyer.webp">
+  <meta property="og:image" content="./og-image.jpg">
 
   <style>
     body{font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,'Noto Sans'}
@@ -49,39 +30,20 @@
     .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
     .reveal.reveal-show{opacity:1;transform:none}
     .reveal-del-1{transition-delay:.07s}.reveal-del-2{transition-delay:.14s}.reveal-del-3{transition-delay:.21s}
-    .hvr-card{transition:transform .25s, box-shadow .25s}
-    .hvr-card:hover{transform:translateY(-4px)}
-    .hvr-btn{transition:transform .2s, box-shadow .2s}
-    .hvr-btn:hover{transform:translateY(-1px)}
+    .hvr-card{transition:transform .25s}.hvr-card:hover{transform:translateY(-4px)}
+    .hvr-btn{transition:transform .2s}.hvr-btn:hover{transform:translateY(-1px)}
     .hvr-link{position:relative}
     .hvr-link:after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:1.5px;background:#ef4444;transition:right .25s}
     .hvr-link:hover:after{right:0}
     .title-glow{position:relative}
     .title-glow:after{content:"";position:absolute;left:0;bottom:-8px;width:72px;height:2px;background:linear-gradient(90deg,#ef4444,transparent)}
   </style>
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LegalService",
-    "name":"Желаева Мария Сергеевна — юрист",
-    "image":"https://zhelaeva.ru/og-image.jpg",
-    "url":"https://zhelaeva.ru/",
-    "telephone":"+7-901-680-62-50",
-    "address":{"@type":"PostalAddress","addressLocality":"Иваново","streetAddress":"ул. Ермака, 43","addressCountry":"RU"},
-    "areaServed":"Иваново",
-    "priceRange":"₽₽",
-    "openingHours":"Mo-Fr 10:00-19:00",
-    "sameAs":["https://wa.me/79016806250","https://t.me/"]
-  }
-  </script>
 </head>
 <body class="bg-neutral-900 text-neutral-100 tracking-tight relative">
   <div class="absolute inset-0 -z-20 grid-bg opacity-40"></div>
   <div class="top-accent h-0.5 w-full"></div>
 
-  <!-- Шапка -->
+  <!-- Header -->
   <header class="sticky top-0 z-50 border-b border-neutral-800/80 backdrop-blur bg-neutral-900/85">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
       <a href="#top" class="font-semibold">Желаева Мария • Юрист</a>
@@ -95,47 +57,37 @@
         <a href="#contacts" class="hover:text-red-500 hvr-link">Контакты</a>
       </nav>
       <div class="flex items-center gap-2">
-        <a href="tel:+79016806250" class="hidden lg:inline-block text-sm" aria-label="Позвонить">+7 901 680-62-50</a>
+        <a href="tel:+79016806250" class="hidden lg:inline-block text-sm">+7 901 680-62-50</a>
         <a href="#lead" class="px-4 py-2 rounded-xl bg-red-600 text-white text-sm font-medium hvr-btn">Записаться</a>
       </div>
     </div>
   </header>
 
-  <!-- Герой -->
+  <!-- Hero -->
   <section id="top" class="relative hero-glow section-ribbon">
     <div class="absolute inset-0 -z-10 bg-gradient-to-br from-neutral-900 via-neutral-900 to-neutral-800"></div>
-
     <div class="container mx-auto px-4 py-12 md:py-20 grid md:grid-cols-2 gap-10 items-center">
       <div class="reveal">
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight title-glow">
           Ваш личный юрист в Иваново<br>
           <span class="text-red-500">Спокойно решу то, что кажется запутанным</span>
         </h1>
-
-        <!-- Микро-доказательства под заголовком -->
-        <p class="mt-3 text-neutral-400 text-sm">20+ лет практики • 300+ дел • 94% целей достигнуты</p>
-
         <p class="mt-4 text-neutral-300 max-w-xl">
           Здравствуйте! Я, Желаева Мария Сергеевна — частный юрист с опытом 20+ лет.
           Банкротство физических лиц, семейные, жилищные и имущественные споры, защита в суде,
           исполнительное производство, сопровождение сделок.
         </p>
-
         <div class="mt-6 flex flex-wrap gap-3 reveal reveal-del-1">
           <a href="#lead" class="px-5 py-3 rounded-xl bg-red-600 text-white font-medium hvr-btn">Бесплатная оценка дела</a>
-          <a href="https://wa.me/79016806250?text=Здравствуйте%2C%20нужна%20консультация" rel="nofollow"
-             class="px-5 py-3 rounded-xl border border-neutral-700 hover:border-neutral-500 hvr-btn">WhatsApp</a>
-          <a href="tg://resolve?phone=79016806250"
-             class="px-5 py-3 rounded-xl border border-neutral-700 hover:border-neutral-500 hvr-btn">Telegram</a>
+          <a href="https://wa.me/79016806250?text=Здравствуйте%2C%20нужна%20консультация" class="px-5 py-3 rounded-xl border border-neutral-700 hover:border-neutral-500 hvr-btn">WhatsApp</a>
+          <a href="tg://resolve?phone=79016806250" class="px-5 py-3 rounded-xl border border-neutral-700 hover:border-neutral-500 hvr-btn">Telegram</a>
         </div>
-
         <div class="mt-4 flex items-center gap-3 text-sm text-neutral-300 reveal reveal-del-2">
           <span class="inline-flex items-center gap-2 px-3 py-1 rounded-lg ring-grad">
             <svg width="16" height="16" viewBox="0 0 24 24" class="opacity-80" aria-hidden="true"><path fill="currentColor" d="M12 2l3 6l6 .9l-4.5 4.3L17 20l-5-2.7L7 20l1.5-6.8L4 8.9L10 8z"/></svg>
             Член Ассоциации юристов России
           </span>
         </div>
-
         <div class="mt-6 grid grid-cols-3 gap-4 text-sm">
           <div class="p-4 rounded-xl ring-grad card-grad hvr-card reveal reveal-del-1">
             <div class="text-3xl font-extrabold text-red-500">20+</div>
@@ -151,27 +103,23 @@
           </div>
         </div>
       </div>
-
       <div class="relative reveal reveal-del-2">
-        <img src="./hero-lawyer.webp" alt="Портрет юриста" class="w-full rounded-2xl shadow-xl object-cover aspect-[4/5] ring-1 ring-neutral-800"/>
-        <div class="absolute bottom-4 left-4 px-4 py-2 rounded-xl bg-neutral-900/70 ring-1 ring-neutral-800 text-sm">
-          Первичная консультация — бесплатно
-        </div>
+        <img src="./hero-юрист.webp" alt="Портрет юриста" class="w-full rounded-2xl shadow-xl object-cover aspect-[4/5] ring-1 ring-neutral-800"/>
+        <div class="absolute bottom-4 left-4 px-4 py-2 rounded-xl bg-neutral-900/70 ring-1 ring-neutral-800 text-sm">Первичная консультация — бесплатно</div>
       </div>
     </div>
   </section>
 
   <div class="sep"></div>
 
-  <!-- Обо мне -->
+  <!-- About -->
   <section id="about" class="py-14 border-y border-neutral-800/80 bg-neutral-900 section-ribbon">
     <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
       <div class="order-2 md:order-1 reveal">
         <h2 class="text-2xl md:text-3xl font-bold title-glow">Обо мне</h2>
         <p class="mt-3 text-neutral-300">
-          20+ лет практики. Спокойно веду сложные дела: банкротство физических лиц,
-          семейные и жилищные споры, представительство в суде, исполнительное производство,
-          юридическое сопровождение сделок.
+          20+ лет практики. Спокойно веду сложные дела: банкротство физических лиц, семейные и жилищные споры,
+          представительство в суде, исполнительное производство, юридическое сопровождение сделок.
         </p>
         <ul class="mt-5 grid gap-3 text-sm text-neutral-300">
           <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-red-600"></span> Лично веду дело и на связи в мессенджерах</li>
@@ -185,19 +133,18 @@
         </div>
       </div>
       <div class="order-1 md:order-2 reveal reveal-del-1">
-        <img src="./about.webp" alt="Желаева Мария — юрист" loading="lazy" class="w-full rounded-2xl shadow-xl ring-1 ring-neutral-800 object-cover">
+        <img src="./about.webp" alt="Желаева Мария — юрист" class="w-full rounded-2xl shadow-xl ring-1 ring-neutral-800 object-cover">
       </div>
     </div>
   </section>
 
-  <!-- Услуги -->
+  <!-- Services -->
   <section id="services" class="py-14 section-ribbon">
     <div class="container mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold reveal title-glow">Услуги</h2>
-      <p class="mt-2 text-neutral-400 text-sm reveal reveal-del-1">
-        Работаю по договору • Конфиденциальность • Без посредников
+      <p class="mt-2 text-neutral-300 max-w-2xl reveal reveal-del-1">
+        Быстро разбираю ситуацию на консультации. После фиксирую смету и сроки. Работаю по договору.
       </p>
-
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal">
           <h3 class="font-semibold">Банкротство физических лиц</h3>
@@ -207,7 +154,6 @@
             <li>Законно, без посредников и без стресса</li>
           </ul>
         </article>
-
         <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
           <h3 class="font-semibold">Семейные дела</h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
@@ -216,7 +162,6 @@
             <li>Защита интересов родителей и детей</li>
           </ul>
         </article>
-
         <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2">
           <h3 class="font-semibold">Жилищные/имущественные споры</h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
@@ -225,7 +170,6 @@
             <li>Устранение препятствий в пользовании</li>
           </ul>
         </article>
-
         <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal">
           <h3 class="font-semibold">Защита в суде</h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
@@ -234,7 +178,6 @@
             <li>Досудебное урегулирование</li>
           </ul>
         </article>
-
         <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
           <h3 class="font-semibold">Исполнительное производство</h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
@@ -243,7 +186,6 @@
             <li>Обжалование действий ФССП</li>
           </ul>
         </article>
-
         <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2">
           <h3 class="font-semibold">Сделки и консультации</h3>
           <ul class="mt-2 text-sm text-neutral-300 list-disc pl-5 space-y-1">
@@ -256,89 +198,39 @@
     </div>
   </section>
 
-  <!-- Как работаю -->
+  <!-- Process -->
   <section id="process" class="py-14 border-y border-neutral-800/80 bg-neutral-900 section-ribbon">
     <div class="container mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold title-glow">Как работаю</h2>
-      <p class="mt-2 text-neutral-400 text-sm">Прозрачно по этапам • Фиксированная смета • На связи</p>
-
       <div class="mt-8 grid md:grid-cols-4 gap-6">
-        <div class="p-6 rounded-2xl ring-grad card-grad reveal">
-          <div class="text-red-500 font-bold">01</div>
-          <h3 class="mt-1 font-semibold">Оценка 30 минут</h3>
-          <p class="mt-2 text-sm text-neutral-300">Краткий разбор, прогноз, первичный план действий.</p>
-        </div>
-        <div class="p-6 rounded-2xl ring-grad card-grad reveal reveal-del-1">
-          <div class="text-red-500 font-bold">02</div>
-          <h3 class="mt-1 font-semibold">Договор и стратегия</h3>
-          <p class="mt-2 text-sm text-neutral-300">Фиксирую задачи, смету и сроки по этапам.</p>
-        </div>
-        <div class="p-6 rounded-2xl ring-grad card-grad reveal reveal-del-2">
-          <div class="text-red-500 font-bold">03</div>
-          <h3 class="mt-1 font-semibold">Ведение дела</h3>
-          <p class="mt-2 text-sm text-neutral-300">Документы, суд, переговоры. На связи в мессенджерах.</p>
-        </div>
-        <div class="p-6 rounded-2xl ring-grad card-grad reveal reveal-del-3">
-          <div class="text-red-500 font-bold">04</div>
-          <h3 class="mt-1 font-semibold">Результат и отчёт</h3>
-          <p class="mt-2 text-sm text-neutral-300">Закрывающие документы и рекомендации.</p>
-        </div>
+        <div class="p-6 rounded-2xl ring-grad card-grad reveal"><div class="text-red-500 font-bold">01</div><h3 class="mt-1 font-semibold">Оценка 30 минут</h3><p class="mt-2 text-sm text-neutral-300">Краткий разбор, прогноз, первичный план действий.</p></div>
+        <div class="p-6 rounded-2xl ring-grad card-grad reveal reveal-del-1"><div class="text-red-500 font-bold">02</div><h3 class="mt-1 font-semibold">Договор и стратегия</h3><p class="mt-2 text-sm text-neutral-300">Фиксирую задачи, смету и сроки по этапам.</p></div>
+        <div class="p-6 rounded-2xl ring-grad card-grad reveal reveal-del-2"><div class="text-red-500 font-bold">03</div><h3 class="mt-1 font-semibold">Ведение дела</h3><p class="mt-2 text-sm text-neutral-300">Документы, суд, переговоры. На связи в мессенджерах.</p></div>
+        <div class="p-6 rounded-2xl ring-grad card-grad reveal reveal-del-3"><div class="text-red-500 font-bold">04</div><h3 class="mt-1 font-semibold">Результат и отчёт</h3><p class="mt-2 text-sm text-neutral-300">Закрывающие документы и рекомендации.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Кейсы -->
+  <!-- Cases -->
   <section id="cases" class="py-14 section-ribbon">
     <div class="container mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold reveal title-glow">Кейсы</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal">
-          <h3 class="font-semibold">Списала более 500 млн ₽ долгов</h3>
-          <p class="mt-2 text-sm text-neutral-300">
-            Анализ ситуации, подготовка, полное сопровождение в суде, помощь в выборе финансового управляющего и взаимодействие с ним.
-          </p>
-        </article>
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
-          <h3 class="font-semibold">Раздел имущества</h3>
-          <p class="mt-2 text-sm text-neutral-300">
-            Движимое и недвижимое имущество (в том числе ипотечное), кредитные обязательства, денежные средства на счетах.
-          </p>
-        </article>
-        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2">
-          <h3 class="font-semibold">Неосновательное обогащение</h3>
-          <p class="mt-2 text-sm text-neutral-300">
-            Анализ ситуации, полное представительство в суде.
-          </p>
-        </article>
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal"><h3 class="font-semibold">Списала более 500 млн ₽ долгов</h3><p class="mt-2 text-sm text-neutral-300">Анализ ситуации, подготовка, полное сопровождение в суде, помощь в выборе финансового управляющего и взаимодействие с ним.</p></article>
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1"><h3 class="font-semibold">Раздел имущества</h3><p class="mt-2 text-sm text-neutral-300">Движимое и недвижимое имущество (в том числе ипотечное), кредитные обязательства, денежные средства на счетах.</p></article>
+        <article class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2"><h3 class="font-semibold">Неосновательное обогащение</h3><p class="mt-2 text-sm text-neutral-300">Анализ ситуации, полное представительство в суде.</p></article>
       </div>
     </div>
   </section>
 
-  <!-- Цены -->
+  <!-- Prices -->
   <section id="prices" class="py-14 border-y border-neutral-800/80 bg-neutral-900 section-ribbon">
     <div class="container mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold reveal title-glow">Цены и форматы</h2>
-      <p class="mt-2 text-neutral-400 text-sm">Первая консультация 0 ₽ • Оплата по этапам • Возможна рассрочка</p>
-
       <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal">
-          <h3 class="font-semibold">Консультация</h3>
-          <p class="text-3xl font-extrabold mt-2 text-white">0 ₽ / 30 мин</p>
-          <p class="mt-2 text-sm text-neutral-300">Первичный разбор и план действий.</p>
-          <a href="#lead" class="mt-4 inline-block px-4 py-2 rounded-xl bg-red-600 text-white hvr-btn">Записаться</a>
-        </div>
-        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
-          <h3 class="font-semibold">Фиксированная смета</h3>
-          <p class="text-3xl font-extrabold mt-2 text-white">от 10 000 ₽</p>
-          <p class="mt-2 text-sm text-neutral-300">Документы, отдельные этапы, досудебное урегулирование.</p>
-          <a href="#lead" class="mt-4 inline-block px-4 py-2 rounded-xl border border-neutral-700 hvr-btn">Обсудить</a>
-        </div>
-        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2">
-          <h3 class="font-semibold">Ведение дела</h3>
-          <p class="text-3xl font-extrabold mt-2 text-white">от 20 000 ₽</p>
-          <p class="mt-2 text-sm text-neutral-300">Представительство в суде. Оплата по этапам.</p>
-          <a href="#lead" class="mt-4 inline-block px-4 py-2 rounded-xl border border-neutral-700 hvr-btn">Узнать стоимость</a>
-        </div>
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal"><h3 class="font-semibold">Консультация</h3><p class="text-3xl font-extrabold mt-2 text-white">0 ₽ / 30 мин</p><p class="mt-2 text-sm text-neutral-300">Первичный разбор и план действий.</p><a href="#lead" class="mt-4 inline-block px-4 py-2 rounded-xl bg-red-600 text-white hvr-btn">Записаться</a></div>
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1"><h3 class="font-semibold">Фиксированная смета</h3><p class="text-3xl font-extrabold mt-2 text-white">от 10 000 ₽</p><p class="mt-2 text-sm text-neutral-300">Документы, отдельные этапы, досудебное урегулирование.</p><a href="#lead" class="mt-4 inline-block px-4 py-2 rounded-xl border border-neutral-700 hvr-btn">Обсудить</a></div>
+        <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-2"><h3 class="font-semibold">Ведение дела</h3><p class="text-3xl font-extrabold mt-2 text-white">от 20 000 ₽</p><p class="mt-2 text-sm text-neutral-300">Представительство в суде. Оплата по этапам. Возможна рассрочка.</p><a href="#lead" class="mt-4 inline-block px-4 py-2 rounded-xl border border-neutral-700 hvr-btn">Узнать стоимость</a></div>
       </div>
     </div>
   </section>
@@ -347,28 +239,28 @@
   <section id="faq" class="py-14 section-ribbon">
     <div class="container mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold reveal title-glow">FAQ</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <details class="p-5 rounded-xl ring-grad card-grad reveal" open>
-          <summary class="font-medium">Сколько стоит первичная консультация?</summary>
-          <p class="mt-2 text-sm text-neutral-300">0 ₽ за 30 минут онлайн/офлайн. По итогу даю план действий и смету.</p>
-        </details>
-        <details class="p-5 rounded-xl ring-grad card-grad reveal reveal-del-1">
-          <summary class="font-medium">Гарантируете результат?</summary>
-          <p class="mt-2 text-sm text-neutral-300">Нет. Даю прогноз и стратегию, работаю по договору и доказательствам.</p>
-        </details>
-        <details class="p-5 rounded-xl ring-grad card-grad reveal reveal-del-2">
-          <summary class="font-medium">Можно рассрочку?</summary>
-          <p class="mt-2 text-sm text-neutral-300">Да, по этапам. На банкротство предусмотрена поэтапная оплата.</p>
-        </details>
-        <details class="p-5 rounded-xl ring-grad card-grad reveal reveal-del-3">
-          <summary class="font-medium">Как быстро начать?</summary>
-          <p class="mt-2 text-sm text-neutral-300">В день обращения: собираю вводные, заключаю договор, стартую.</p>
-        </details>
-      </div>
+    </div>
+    <div class="container mx-auto px-4 mt-6 grid md:grid-cols-2 gap-6">
+      <details class="p-5 rounded-2xl ring-grad card-grad reveal" open>
+        <summary class="font-medium">Сколько стоит первичная консультация?</summary>
+        <p class="mt-2 text-sm text-neutral-300">0 ₽ за 30 минут онлайн/офлайн. По итогу даю план действий и смету.</p>
+      </details>
+      <details class="p-5 rounded-2xl ring-grad card-grad reveal reveal-del-1">
+        <summary class="font-medium">Гарантируете результат?</summary>
+        <p class="mt-2 text-sm text-neutral-300">Нет. Даю прогноз и стратегию, работаю по договору и доказательствам.</p>
+      </details>
+      <details class="p-5 rounded-2xl ring-grad card-grad reveal reveal-del-2">
+        <summary class="font-medium">Можно рассрочку?</summary>
+        <p class="mt-2 text-sm text-neutral-300">Да, по этапам. На банкротство предусмотрена поэтапная оплата.</p>
+      </details>
+      <details class="p-5 rounded-2xl ring-grad card-grad reveal reveal-del-3">
+        <summary class="font-medium">Как быстро начать?</summary>
+        <p class="mt-2 text-sm text-neutral-300">В день обращения: собираю вводные, заключаю договор, стартую.</p>
+      </details>
     </div>
   </section>
 
-  <!-- Лид-форма -->
+  <!-- Lead -->
   <section id="lead" class="py-14 section-ribbon">
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-8 items-start">
@@ -381,30 +273,35 @@
           </ul>
         </div>
 
+        <!-- ВСТРОЕННАЯ РАБОЧАЯ ФОРМА -->
         <form action="https://formspree.io/f/mldpnznp"
-              class="p-6 rounded-2xl ring-grad card-grad shadow space-y-4 reveal reveal-del-1">
-          <!-- honeypot -->
-          <input type="text" name="company" class="hidden" tabindex="-1" autocomplete="off">
+              method="POST" accept-charset="UTF-8"
+              class="p-6 rounded-2xl ring-grad card-grad shadow space-y-4 reveal reveal-del-1"
+              id="leadForm">
+
+          <input type="hidden" name="_subject" value="Заявка с zhelaeva.ru">
+          <input type="hidden" name="_redirect" value="https://zhelaeva.ru/спасибо.html">
+          <input type="text" name="_gotcha" style="display:none">
 
           <div>
             <label class="text-sm">Имя</label>
             <input name="name" required
-              class="mt-1 w-full border rounded-xl px-3 py-2 bg-neutral-900 border-neutral-700 text-neutral-100 placeholder-neutral-500"
-              placeholder="Как к вам обращаться"/>
+                   class="mt-1 w-full border rounded-xl px-3 py-2 bg-neutral-900 border-neutral-700 text-neutral-100 placeholder-neutral-500"
+                   placeholder="Как к вам обращаться">
           </div>
 
           <div>
             <label class="text-sm">Телефон</label>
-            <input id="phone" name="phone" required inputmode="tel"
-              class="mt-1 w-full border rounded-xl px-3 py-2 bg-neutral-900 border-neutral-700 text-neutral-100 placeholder-neutral-500"
-              placeholder="+7"/>
+            <input name="phone" required inputmode="tel"
+                   class="mt-1 w-full border rounded-xl px-3 py-2 bg-neutral-900 border-neutral-700 text-neutral-100 placeholder-neutral-500"
+                   placeholder="+7">
           </div>
 
           <div>
             <label class="text-sm">Тема вопроса</label>
             <select name="topic"
-              class="mt-1 w-full border rounded-xl px-3 py-2 bg-neutral-900 border-neutral-700 text-neutral-100">
-              <option>Банкротство</option>
+                    class="mt-1 w-full border rounded-xl px-3 py-2 bg-neutral-900 border-neutral-700 text-neutral-100">
+              <option>Банкротство физических лиц</option>
               <option>Семейный спор</option>
               <option>Долги / МФО</option>
               <option>Жилищный спор</option>
@@ -416,25 +313,29 @@
           <div>
             <label class="text-sm">Кратко о ситуации</label>
             <textarea name="message" rows="3"
-              class="mt-1 w-full border rounded-xl px-3 py-2 bg-neutral-900 border-neutral-700 text-neutral-100 placeholder-neutral-500"
-              placeholder="1–2 предложения"></textarea>
+                      class="mt-1 w-full border rounded-xl px-3 py-2 bg-neutral-900 border-neutral-700 text-neutral-100 placeholder-neutral-500"
+                      placeholder="1–2 предложения"></textarea>
           </div>
-
-          <!-- редирект на страницу «спасибо» -->
-          <input type="hidden" name="_redirect" value="https://zhelaeva.ru/спасибо.html">
 
           <label class="flex items-start gap-2 text-xs text-neutral-400">
             <input type="checkbox" required class="mt-1">
             Согласие на обработку персональных данных
           </label>
 
-          <button class="w-full px-4 py-3 rounded-xl bg-red-600 text-white font-medium hvr-btn">Отправить</button>
+          <button id="sendBtn"
+                  class="w-full px-4 py-3 rounded-xl bg-red-600 text-white font-medium hvr-btn">
+            Отправить
+          </button>
+          <p id="sendHint" class="text-xs text-neutral-400 hidden">
+            Заявка отправлена. Перенаправляю…
+          </p>
         </form>
+        <!-- /ФОРМА -->
       </div>
     </div>
   </section>
 
-  <!-- Контакты -->
+  <!-- Contacts -->
   <section id="contacts" class="py-14 border-t border-neutral-800/80 section-ribbon">
     <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 items-start">
       <div class="md:col-span-2 reveal">
@@ -442,12 +343,11 @@
         <div class="mt-4 space-y-2 text-neutral-300">
           <p><b>Телефон:</b> <a href="tel:+79016806250" class="text-red-500 hvr-link">+7 901 680-62-50</a></p>
           <p><b>Email:</b> <a href="mailto:zhelaevamaria@yandex.ru" class="text-red-500 hvr-link">zhelaevamaria@yandex.ru</a></p>
-          <p><b>Мессенджеры:</b> <a href="https://wa.me/79016806250?text=Здравствуйте%2C%20нужна%20консультация" rel="nofollow" class="text-red-500 hvr-link">WhatsApp</a>, <a href="tg://resolve?phone=79016806250" class="text-red-500 hvr-link">Telegram</a></p>
+          <p><b>Мессенджеры:</b> <a href="https://wa.me/79016806250?text=Здравствуйте%2C%20нужна%20консультация" class="text-red-500 hvr-link">WhatsApp</a>, <a href="tg://resolve?phone=79016806250" class="text-red-500 hvr-link">Telegram</a></p>
           <p><b>Адрес:</b> Иваново, ул. Ермака, 43</p>
           <p><b>Время работы:</b> пн–пт 10:00–19:00</p>
         </div>
       </div>
-
       <div class="p-6 rounded-2xl ring-grad card-grad hvr-card reveal reveal-del-1">
         <h3 class="font-semibold">Записаться в офис</h3>
         <p class="mt-2 text-neutral-400">Иваново, ул. Ермака, 43</p>
@@ -456,7 +356,7 @@
     </div>
   </section>
 
-  <!-- Футер -->
+  <!-- Footer -->
   <footer class="py-10 text-sm text-neutral-400">
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
       <p>© <span id="year"></span> Желаева Мария Сергеевна. Все права защищены.</p>
@@ -467,7 +367,7 @@
     </div>
   </footer>
 
-  <!-- Документы -->
+  <!-- Legal -->
   <section id="privacy" class="py-14 border-t border-neutral-800/80">
     <div class="container mx-auto px-4 prose prose-invert max-w-none reveal">
       <h2>Политика конфиденциальности</h2>
@@ -481,45 +381,58 @@
     </div>
   </section>
 
-  <!-- Плавающая CTA и кнопка «Наверх» -->
-  <a href="#lead" class="fixed bottom-5 right-5 z-[60] px-4 py-3 rounded-full bg-red-600 text-white shadow-lg hvr-btn">Записаться</a>
-  <button id="toTop" class="hidden fixed bottom-5 left-5 px-3 py-2 rounded-xl bg-neutral-800/80 ring-1 ring-neutral-700">↑ Наверх</button>
+  <!-- Mobile sticky -->
+  <div class="fixed md:hidden bottom-4 inset-x-0 px-4 z-50">
+    <div class="mx-auto max-w-md grid grid-cols-2 gap-2 bg-neutral-900/90 ring-grad p-2 backdrop-blur rounded-2xl">
+      <a href="#lead" class="text-center px-4 py-3 rounded-xl bg-red-600 text-white font-medium hvr-btn">Записаться</a>
+      <a href="tel:+79016806250" class="text-center px-4 py-3 rounded-xl border border-neutral-700 hvr-btn">Позвонить</a>
+    </div>
+  </div>
 
-  <!-- Скрипты -->
   <script>
     // год в футере
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // reveal
+    // плавное появление секций
     const io=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('reveal-show');io.unobserve(x.target);}})},{threshold:.08});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
     // Telegram fallback
     document.querySelectorAll('a[href^="tg://resolve"]').forEach(a=>{
       a.addEventListener('click',()=>{
-        setTimeout(()=>{if(document.visibilityState==='visible'){location.href='https://t.me/';}},800);
+        setTimeout(()=>{ if(document.visibilityState==='visible'){ location.href='https://t.me/'; } },800);
       });
     });
 
-    // Маска телефона
-    const tel=document.getElementById('phone');
-    if(tel){
-      tel.addEventListener('input',e=>{
-        let v=e.target.value.replace(/\D/g,'').slice(0,11);
-        if(v.startsWith('8')) v='7'+v.slice(1);
-        let o='+7';
-        if(v.length>1) o+=' ('+v.slice(1,4);
-        if(v.length>=4) o+=') '+v.slice(4,7);
-        if(v.length>=7) o+='-'+v.slice(7,9);
-        if(v.length>=9) o+='-'+v.slice(9,11);
-        e.target.value=o;
-      });
-    }
+    // Прогрессивная отправка формы (fetch) + редирект на /спасибо
+    (function () {
+      const form = document.getElementById('leadForm');
+      const btn  = document.getElementById('sendBtn');
+      const hint = document.getElementById('sendHint');
 
-    // Наверх
-    const topBtn=document.getElementById('toTop');
-    window.addEventListener('scroll',()=>{topBtn.classList.toggle('hidden',window.scrollY<600)});
-    topBtn && (topBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'}));
+      if (window.fetch && form) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          btn.disabled = true; btn.textContent = 'Отправляю…';
+
+          try {
+            const resp = await fetch(form.action, {
+              method: 'POST',
+              headers: { 'Accept': 'application/json' },
+              body: new FormData(form)
+            });
+            if (resp.ok) {
+              hint.classList.remove('hidden');
+              setTimeout(()=>{ window.location.href='https://zhelaeva.ru/спасибо.html'; }, 600);
+            } else {
+              form.submit();
+            }
+          } catch {
+            form.submit();
+          }
+        });
+      }
+    })();
   </script>
 </body>
 </html>
