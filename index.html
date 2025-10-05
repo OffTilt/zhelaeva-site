@@ -30,6 +30,23 @@ body{font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'
 <meta property="og:type" content="website"><meta property="og:url" content="https://zhelaeva.ru/">
 <meta property="og:image" content="https://zhelaeva.ru/og-image.jpg">
   <link rel="canonical" href="https://zhelaeva.ru/">
+<!-- Yandex.Metrica -->
+<script type="text/javascript">
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0];
+  k.async=1;k.src=r;a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  // TODO: замените 104386448 на ID счётчика
+  ym(104386448, 'init', {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/104386448" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
+<!-- /Yandex.Metrica -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LegalService", "name": "Желаева Мария — юрист", "url": "https://zhelaeva.ru/", "telephone": "+7 901 680-62-50", "email": "zhelaevamaria@yandex.ru", "address": {"@type": "PostalAddress", "streetAddress": "ул. Ермака, 43", "addressLocality": "Иваново", "addressCountry": "RU"}, "openingHours": "Mo-Fr 10:00-19:00", "areaServed": "Иваново и Ивановская область", "priceRange": "₽₽"}</script>
 </head>
 <body class="bg-neutral-900 text-neutral-100 tracking-tight relative">
 <div class="absolute inset-0 -z-20 grid-bg opacity-40"></div><div class="top-accent h-0.5 w-full"></div>
@@ -317,5 +334,26 @@ document.querySelectorAll('a[href^="tg://resolve"]').forEach(a=>{
     setTimeout(()=>{ if(document.visibilityState==='visible'){ location.href='https://zhelaeva.ru/thanks.html'; } },3000);
   });
 })();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var COUNTER_ID = '104386448';
+  function goal(name){
+    try { ym(COUNTER_ID, 'reachGoal', name); } catch(e) {}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(el){
+    el.addEventListener('click', function(){ goal('phone_click'); });
+  });
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(el){
+    el.addEventListener('click', function(){ goal('whatsapp'); });
+  });
+  document.querySelectorAll('a[href*="t.me"]').forEach(function(el){
+    el.addEventListener('click', function(){ goal('telegram'); });
+  });
+  var form = document.querySelector('form[action*="formspree"]');
+  if(form){
+    form.addEventListener('submit', function(){ goal('lead_form'); });
+  }
+});
 </script>
 </body></html>
