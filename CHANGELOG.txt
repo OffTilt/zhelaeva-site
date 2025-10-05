@@ -1,0 +1,5 @@
+Изменения:
+- index.html: абсолютный og:image; удалён <link rel="icon">; добавлен canonical на главную.
+- thanks.html: исправлены canonical и og:url на /thanks.html; абсолютный og:image.
+- robots.txt: добавлены Host и Sitemap.
+- sitemap.xml: заменены ссылки на домен zhelaeva.ru с корректными приоритетами.
