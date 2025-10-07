@@ -16,14 +16,27 @@
 .brand-sub{display:block; font-size:13px; color:#9ca3af;}
 /* Prevent touching top on very small screens */
 header, .site-header{display:block;}</style>
+
+<style>/* === Clean compact header === */
+.site-header{width:100%; background:#111213;}
+.header-inner{max-width:1200px; margin:0 auto; padding:10px 16px; display:flex; align-items:center;}
+.brand{display:flex; align-items:center; gap:10px; text-decoration:none;}
+.brand-logo{height:28px; width:auto; display:block; border-radius:6px;}
+.brand-title{font-weight:700; font-size:16px; color:#ef4444;}
+.brand-sub{font-size:12px; color:#9ca3af; margin-left:6px;}
+@media (min-width:768px){ .brand-sub{display:none;} }</style>
 </head>
     <body>
-    <a class="site-brand" href="/">
-  <img class="site-logo" src="/assets/logo/logo.svg" alt="Желаева М.С. — Ваш частный юрист">
-  <div class="brand-text">
-    <span class="brand-title">Желаева М.С.</span>
-    <span class="brand-sub">Ваш частный юрист</span>
+<div class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <img class="brand-logo" src="/assets/logo/logo.svg" alt="Желаева М.С.">
+      <span class="brand-title">Желаева М.С.</span>
+      <span class="brand-sub">Ваш частный юрист</span>
+    </a>
   </div>
-</a>
+</div>
+
+    
 Verification: 96f77649ad663a48</body>
 </html>
