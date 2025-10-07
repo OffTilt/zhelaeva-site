@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="80" viewBox="0 0 360 80">
+  <defs>
+    <style>
+      .brand { font: 700 30px system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif; fill: #ef4444; letter-spacing: 0.3px; }
+      .sub   { font: 500 13px system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif; fill: #6b7280; }
+      .badge { fill: #ef4444; }
+      .tie   { fill: #ef4444; }
+    </style>
+  </defs>
+  <!-- Minimal badge with collar and tie -->
+  <g transform="translate(0,0)">
+    <path class="badge" d="M16,8 h48 a12,12 0 0 1 12,12 v40 a12,12 0 0 1 -12,12 h-48 a12,12 0 0 1 -12,-12 v-40 a12,12 0 0 1 12,-12 z"/>
+    <path fill="#ffffff" d="M24,20 h32 l-8,8 h-16 z"/>
+    <polygon class="tie" points="40,28 46,36 40,72 34,36"/>
+  </g>
+  <g transform="translate(88,22)">
+    <text class="brand">Желаева М.С.</text>
+    <text class="sub" y="28">Ваш частный юрист</text>
+  </g>
+</svg>
